@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlashAnzan - 次世代フラッシュ暗算アプリ</title>
+    <title>FlashAnzan - Next-Gen Flash Mental Arithmetic App</title>
     <style>
         :root {
             --primary-color: #2196F3;
@@ -19,6 +19,12 @@
             color: var(--text-color);
             line-height: 1.6;
         }
+        
+        /* 💡 言語切り替え用のCSS（デフォルトは英語を表示・日本語を非表示） */
+        .lang-ja { display: none; }
+        .lang-en { display: block; }
+        a.lang-en, span.lang-en { display: inline-block; }
+
         header {
             background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
             color: white;
@@ -37,7 +43,6 @@
             margin: 0 auto 30px;
         }
         .btn {
-            display: inline-block;
             background-color: var(--secondary-color);
             color: #333;
             padding: 15px 30px;
@@ -130,54 +135,71 @@
 
     <header>
         <h1>FlashAnzan</h1>
-        <p>脳の限界を突破する。<br>プレイヤーの実力に寄り添う、超・適応型の次世代フラッシュ暗算アプリ。</p>
-        <a href="#" class="btn">今すぐダウンロード</a>
+        <p class="lang-en">Push the limits of your brain. A highly adaptive, next-generation flash mental arithmetic app tailored to your skills.</p>
+        <p class="lang-ja">脳の限界を突破する。<br>プレイヤーの実力に寄り添う、超・適応型の次世代フラッシュ暗算アプリ。</p>
+        
+        <a href="#" class="btn lang-en">Download Now</a>
+        <a href="#" class="btn lang-ja">今すぐダウンロード</a>
     </header>
 
     <div class="container">
-        <h2 class="section-title">アプリの魅力と特徴</h2>
+        <h2 class="section-title lang-en">App Features</h2>
+        <h2 class="section-title lang-ja">アプリの魅力と特徴</h2>
         
         <div class="features">
             <div class="feature-card">
                 <div class="feature-icon">📈</div>
-                <h3>25段階のスモールステップ</h3>
-                <p>いきなり難易度が跳ね上がる理不尽さはありません。1.5秒から0.3秒まで、桁数と口数（回数）が緻密に計算された25段階の階段を用意。初心者のウォーミングアップから、神業レベルの暗算まで着実に実力を伸ばせます。</p>
+                <h3 class="lang-en">25 Micro-Steps</h3>
+                <h3 class="lang-ja">25段階のスモールステップ</h3>
+                <p class="lang-en">No sudden difficulty spikes. Carefully crafted 25 steps from 1.5s to 0.3s intervals. Smoothly transition from beginner warm-ups to god-tier calculation.</p>
+                <p class="lang-ja">いきなり難易度が跳ね上がる理不尽さはありません。1.5秒から0.3秒まで、桁数と口数（回数）が緻密に計算された25段階の階段を用意。初心者のウォーミングアップから、神業レベルの暗算まで着実に実力を伸ばせます。</p>
             </div>
 
             <div class="feature-card">
                 <div class="feature-icon">🧠</div>
-                <h3>AIライクな動的難易度調整</h3>
-                <p>プレイヤーの「回答にかかった秒数」をリアルタイムで測定。2秒以内で即答できる余裕があれば一気にレベルを2段階スキップし、時間がかかった時は同じレベルでキープ。常に「あなたに最適な難易度」を提供し、深い集中状態（フロー）を生み出します。</p>
+                <h3 class="lang-en">Dynamic Difficulty Adjustment</h3>
+                <h3 class="lang-ja">AIライクな動的難易度調整</h3>
+                <p class="lang-en">Measures your answer speed in real-time. Fast answers skip levels, while slower ones keep you at your current pace to maintain a perfect flow state.</p>
+                <p class="lang-ja">プレイヤーの「回答にかかった秒数」をリアルタイムで測定。2秒以内で即答できる余裕があれば一気にレベルを2段階スキップし、時間がかかった時は同じレベルでキープ。常に「あなたに最適な難易度」を提供し、深い集中状態（フロー）を生み出します。</p>
             </div>
 
             <div class="feature-card">
                 <div class="feature-icon">🔥</div>
-                <h3>最高のウォーミングアップ</h3>
-                <p>アプリを起動するたびにレベル1からやり直す必要はありません。「前回の到達レベル - 2」から自動的にスタートする設計により、最も脳が成長する適度な難易度にすぐ到達できます。</p>
+                <h3 class="lang-en">Perfect Warm-Up</h3>
+                <h3 class="lang-ja">最高のウォーミングアップ</h3>
+                <p class="lang-en">Never start from level 1 again. The app automatically restarts slightly below your previous max level, getting you to the optimal difficulty right away.</p>
+                <p class="lang-ja">アプリを起動するたびにレベル1からやり直す必要はありません。「前回の到達レベル - 2」から自動的にスタートする設計により、最も脳が成長する適度な難易度にすぐ到達できます。</p>
             </div>
 
             <div class="feature-card">
                 <div class="feature-icon">⚙️</div>
-                <h3>自由自在なカスタムモード</h3>
-                <p>検定（挑戦）モードだけでなく、自分の苦手な「桁数」「スピード」「口数」を細かく設定できるカスタムモードを搭載。徹底的な反復練習をサポートします。</p>
+                <h3 class="lang-en">Deep Customization</h3>
+                <h3 class="lang-ja">自由自在なカスタムモード</h3>
+                <p class="lang-en">Configure digits, speed, and question count freely to target your weaknesses and build a perfect training routine.</p>
+                <p class="lang-ja">検定（挑戦）モードだけでなく、自分の苦手な「桁数」「スピード」「口数」を細かく設定できるカスタムモードを搭載。徹底的な反復練習をサポートします。</p>
             </div>
 
             <div class="feature-card">
                 <div class="feature-icon">🏆</div>
-                <h3>全世界オンラインランキング</h3>
-                <p>叩き出した限界レベルは、クラウドデータベースに記録されます。自分のレベルと他のプレイヤーを比較し、モチベーションを高め合いましょう。</p>
+                <h3 class="lang-en">Global Leaderboards</h3>
+                <h3 class="lang-ja">全世界オンラインランキング</h3>
+                <p class="lang-en">Your max level is recorded securely in the cloud database. Compare your mental math skills with players worldwide.</p>
+                <p class="lang-ja">叩き出した限界レベルは、クラウドデータベースに記録されます。自分のレベルと他のプレイヤーを比較し、モチベーションを高め合いましょう。</p>
             </div>
 
             <div class="feature-card">
                 <div class="feature-icon">⚡</div>
-                <h3>ストレスフリーなUI/UX</h3>
-                <p>回答のたびにキーボードが隠れる煩わしさを排除。流れるように連続で問題に挑めるほか、動画広告もゲームの没入感を削がないタイミング（スコア登録後など）にスマートに配置されています。</p>
+                <h3 class="lang-en">Stress-Free UI/UX</h3>
+                <h3 class="lang-ja">ストレスフリーなUI/UX</h3>
+                <p class="lang-en">No annoying keyboard pop-ups during gameplay. Enjoy continuous challenges with smart ad placements that never ruin your immersion.</p>
+                <p class="lang-ja">回答のたびにキーボードが隠れる煩わしさを排除。流れるように連続で問題に挑めるほか、動画広告もゲームの没入感を削がないタイミング（スコア登録後など）にスマートに配置されています。</p>
             </div>
         </div>
     </div>
 
     <div class="tech-stack">
-        <h2 class="section-title">Technology Stack</h2>
+        <h2 class="section-title lang-en">Technology Stack</h2>
+        <h2 class="section-title lang-ja">使用テクノロジー</h2>
         <div class="tech-badges">
             <span>Java</span>
             <span>Android SDK</span>
@@ -191,5 +213,33 @@
         &copy; 2026 FlashAnzan Project. All rights reserved.
     </footer>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // ユーザーのブラウザ言語を取得（例: "ja", "en-US" など）
+            var userLang = navigator.language || navigator.userLanguage;
+            
+            // 言語が日本語（ja）で始まる場合のみ、表示を切り替える
+            if (userLang.startsWith('ja')) {
+                document.documentElement.lang = 'ja';
+                document.title = "FlashAnzan - 次世代フラッシュ暗算アプリ";
+                
+                // 英語用の要素を隠す
+                var enElements = document.querySelectorAll('.lang-en');
+                enElements.forEach(function(el) {
+                    el.style.display = 'none';
+                });
+                
+                // 日本語用の要素を表示する
+                var jaElements = document.querySelectorAll('.lang-ja');
+                jaElements.forEach(function(el) {
+                    if(el.tagName.toLowerCase() === 'a' || el.tagName.toLowerCase() === 'span') {
+                        el.style.display = 'inline-block';
+                    } else {
+                        el.style.display = 'block';
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>
