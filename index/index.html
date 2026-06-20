@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlashAnzan - 次世代フラッシュ暗算アプリ</title>
+    <style>
+        :root {
+            --primary-color: #2196F3;
+            --secondary-color: #FFC107;
+            --bg-color: #f8f9fa;
+            --text-color: #333;
+        }
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0 0 10px;
+            letter-spacing: 2px;
+        }
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: #333;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 30px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #1e3c72;
+            position: relative;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: var(--primary-color);
+            margin: 10px auto 0;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        .feature-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+        .feature-card p {
+            font-size: 0.95rem;
+            text-align: left;
+        }
+        .tech-stack {
+            background-color: white;
+            padding: 40px 20px;
+            margin-top: 50px;
+            text-align: center;
+        }
+        .tech-badges span {
+            display: inline-block;
+            background: #eee;
+            padding: 8px 15px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>FlashAnzan</h1>
+        <p>脳の限界を突破する。<br>プレイヤーの実力に寄り添う、超・適応型の次世代フラッシュ暗算アプリ。</p>
+        <a href="#" class="btn">今すぐダウンロード</a>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">アプリの魅力と特徴</h2>
+        
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">📈</div>
+                <h3>25段階のスモールステップ</h3>
+                <p>いきなり難易度が跳ね上がる理不尽さはありません。1.5秒から0.3秒まで、桁数と口数（回数）が緻密に計算された25段階の階段を用意。初心者のウォーミングアップから、神業レベルの暗算まで着実に実力を伸ばせます。</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🧠</div>
+                <h3>AIライクな動的難易度調整</h3>
+                <p>プレイヤーの「回答にかかった秒数」をリアルタイムで測定。2秒以内で即答できる余裕があれば一気にレベルを2段階スキップし、時間がかかった時は同じレベルでキープ。常に「あなたに最適な難易度」を提供し、深い集中状態（フロー）を生み出します。</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🔥</div>
+                <h3>最高のウォーミングアップ</h3>
+                <p>アプリを起動するたびにレベル1からやり直す必要はありません。「前回の到達レベル - 2」から自動的にスタートする設計により、最も脳が成長する適度な難易度にすぐ到達できます。</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">⚙️</div>
+                <h3>自由自在なカスタムモード</h3>
+                <p>検定（挑戦）モードだけでなく、自分の苦手な「桁数」「スピード」「口数」を細かく設定できるカスタムモードを搭載。徹底的な反復練習をサポートします。</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🏆</div>
+                <h3>全世界オンラインランキング</h3>
+                <p>叩き出した限界レベルは、クラウドデータベースに記録されます。自分のレベルと他のプレイヤーを比較し、モチベーションを高め合いましょう。</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>ストレスフリーなUI/UX</h3>
+                <p>回答のたびにキーボードが隠れる煩わしさを排除。流れるように連続で問題に挑めるほか、動画広告もゲームの没入感を削がないタイミング（スコア登録後など）にスマートに配置されています。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="tech-stack">
+        <h2 class="section-title">Technology Stack</h2>
+        <div class="tech-badges">
+            <span>Java</span>
+            <span>Android SDK</span>
+            <span>Firebase Firestore</span>
+            <span>Google AdMob</span>
+            <span>In-App Updates</span>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 FlashAnzan Project. All rights reserved.
+    </footer>
+
+</body>
+</html>
